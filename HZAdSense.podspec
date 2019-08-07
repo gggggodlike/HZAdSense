@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "HZAdSense"
-  spec.version      = "1.0.4"
+  spec.version      = "1.0.6"
   spec.summary      = "AdSense by Ultifit"
 
   # This description is used to generate tags and improve search results.
@@ -80,7 +80,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/gggggodlike/HZAdSense.git", :tag => "1.0.4" }
+  spec.source       = { :git => "https://github.com/gggggodlike/HZAdSense.git", :tag => "1.0.6" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -119,6 +119,7 @@ Pod::Spec.new do |spec|
 
   # spec.framework  = "SomeFramework"
   spec.frameworks = "CoreGraphics", "Foundation","MobileCoreServices","Security","SystemConfiguration","UIKit","ImageIO"
+  spec.vendored_libraries = 'HZAdsenseSDK-OC/*.a'
 
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"
@@ -133,5 +134,5 @@ Pod::Spec.new do |spec|
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
-  spec.xcconfig  = { "LIBRARY_SEARCH_PATHS" => "${PODS_ROOT}/HZAdSense" }
+  # spec.xcconfig  = { "LIBRARY_SEARCH_PATHS" => "${PODS_ROOT}/HZAdSense" }
 end
