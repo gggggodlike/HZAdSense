@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "HZAdSense"
-  spec.version      = "1.0.1"
+  spec.version      = "1.0.3"
   spec.summary      = "AdSense by Ultifit"
 
   # This description is used to generate tags and improve search results.
@@ -80,7 +80,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/gggggodlike/HZAdSense.git", :tag => "1.0.1" }
+  spec.source       = { :git => "https://github.com/gggggodlike/HZAdSense.git", :tag => "1.0.3" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -91,7 +91,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "HZAdsenseSDK-OC/*.h","*.a"
+  spec.source_files  = "HZAdsenseSDK-OC/*.h","HZAdsenseSDK-OC/*.a"
   #spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
@@ -118,7 +118,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.framework  = "SomeFramework"
-  # spec.frameworks = "SomeFramework", "AnotherFramework"
+  spec.frameworks = "CoreGraphics", "Foundation","MobileCoreServices","Security","SystemConfiguration","UIKit","ImageIO"
 
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"
