@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "HZAdSense"
-  spec.version      = "1.0.6"
+  spec.version      = "1.0.7"
   spec.summary      = "AdSense by Ultifit"
 
   # This description is used to generate tags and improve search results.
@@ -39,7 +39,7 @@ Pod::Spec.new do |spec|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  spec.license      = "MIT"
+  spec.license      = { :type => "MIT", :file => "LICENSE" }
   # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -80,7 +80,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/gggggodlike/HZAdSense.git", :tag => "1.0.6" }
+  spec.source       = { :git => "https://github.com/gggggodlike/HZAdSense.git", :tag => "1.0.7" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -91,7 +91,8 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "HZAdsenseSDK-OC/*.h","HZAdsenseSDK-OC/*.a"
+  spec.source_files  = "HZAdsenseSDK-OC/*.framework"
+  ## spec.source_files  = "HZAdsenseSDK-OC/*.h","HZAdsenseSDK-OC/*.a"
   #spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
@@ -106,7 +107,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.resource  = "icon.png"
-  spec.resource = "HZAdsenseSDK-OC/*.bundle"
+  ## spec.resource = "HZAdsenseSDK-OC/*.bundle"
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
@@ -118,8 +119,8 @@ Pod::Spec.new do |spec|
   #
 
   # spec.framework  = "SomeFramework"
-  spec.frameworks = "CoreGraphics", "Foundation","MobileCoreServices","Security","SystemConfiguration","UIKit","ImageIO"
-  spec.vendored_libraries = 'HZAdsenseSDK-OC/*.a'
+  ## spec.frameworks = "CoreGraphics", "Foundation","MobileCoreServices","Security","SystemConfiguration","UIKit","ImageIO"
+  ## spec.vendored_libraries = 'HZAdsenseSDK-OC/*.a'
 
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"
