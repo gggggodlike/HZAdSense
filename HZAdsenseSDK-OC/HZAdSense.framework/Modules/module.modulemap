@@ -1,6 +1,0 @@
-framework module HZAdSense {
-  umbrella header "HZAdSense.h"
-
-  export *
-  module * { export * }
-}
