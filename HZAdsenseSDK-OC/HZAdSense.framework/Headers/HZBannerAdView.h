@@ -14,14 +14,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol HZBannerAdViewDelegate <NSObject>
 @optional
-#warning 合并成功和失败的回调方法/或者复用ADSourceOnShow方法通过block给出结果，其他回调只做关键的功能性
+
 /**
- *  接收服务器返回的广告数据成功时调用
+ *  广告加载成功时调用
  */
 - (void)bannerAdViewDidLoad:(HZBannerAdView *)bannerAdView;
 
 /**
- *  接收服务器返回的广告数据失败时调用
+ *  广告加载失败时调用
  */
 - (void)bannerAdViewFailedToLoad:(HZBannerAdView *)bannerAdView error:(NSError *)error;
 
@@ -63,9 +63,9 @@ NS_ASSUME_NONNULL_BEGIN
                    positionId:(NSString *)positionId
                      delegate:(nullable id <HZBannerAdViewDelegate>)delegate;
 
-#warning 广告加载成功直接显示，不需要用户手动调用，此方法可以专门用作网络请求和刷新
+
 /**
- * 【必须】显示广告
+ * 【必须】显示广告,可以重复调用达到刷新的效果
  */
 - (void)adSourceOnShow;
 @end

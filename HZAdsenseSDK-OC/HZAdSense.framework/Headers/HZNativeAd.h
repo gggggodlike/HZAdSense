@@ -48,7 +48,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  * 【必须】显示广告拉取的结果
- *  count - 想要请求的广告数量
+ *  count - 想要请求的广告数量，个数可能少于请求的数量
  *  viewFrame - 视图位置大小
  *  error为空时代表拉取成功，否则error给出错误信息
  *  views - 为要展示的广告视图，由开发者自行添加（注：其大小为传入的viewFrame.size，一旦创建无法修改）
@@ -56,8 +56,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)adSourceOnShowCount:(NSUInteger)count
                   viewFrame:(CGRect)viewFrame
                      result:(void(^)(NSError *error, NSArray<HZNativeAdView *> *views))result;
-
-
 @end
 
 NS_ASSUME_NONNULL_END

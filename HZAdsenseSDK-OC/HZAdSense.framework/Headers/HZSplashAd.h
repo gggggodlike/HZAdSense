@@ -16,12 +16,12 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol HZSplashAdDelegate <NSObject>
 @optional
 /**
- *  接收服务器返回的广告数据成功时调用
+ *  广告加载成功时调用
  */
 - (void)splashAdDidLoad:(HZSplashAd *)splashAd;
 
 /**
- *  接收服务器返回的广告数据失败时调用
+ *  广告加载失败时调用
  */
 - (void)splashAdFailedToLoad:(HZSplashAd *)splashAd error:(NSError *)error;
 
@@ -69,14 +69,10 @@ NS_ASSUME_NONNULL_BEGIN
  *       bottomView - 广告的底部区域可自定义，传nil则为全屏
  *       delegate - 代理的对象
  */
-+ (instancetype)getInstanceWithPositionId:(NSString *)positionId
-                         customBottomView:(UIView *_Nullable)bottomView
-                                 delegate:(nullable id <HZSplashAdDelegate>)delegate;
++ (instancetype)showInstanceWithPositionId:(NSString *)positionId
+                          customBottomView:(UIView *_Nullable)bottomView
+                                  delegate:(nullable id <HZSplashAdDelegate>)delegate;
 
-/**
- * 【必须】显示广告
- */
-- (void)adSourceOnShow;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "HZAdSense"
-  spec.version      = "1.0.10"
+  spec.version      = "1.0.12"
   spec.summary      = "AdSense by Ultifit"
 
   # This description is used to generate tags and improve search results.
@@ -80,7 +80,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/gggggodlike/HZAdSense.git", :tag => "1.0.10" }
+  spec.source       = { :git => "https://github.com/gggggodlike/HZAdSense.git", :tag => "1.0.12" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
